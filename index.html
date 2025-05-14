@@ -157,6 +157,47 @@
         </form>
       </div>
     </div> -->
+    <form id="userForm">
+      <label>Username:</label>
+      <input type="text" name="username" required /><br />
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" required /><br />
+
+      <label>Email:</label>
+      <input type="email" name="email" required /><br />
+
+      <label>Comment:</label>
+      <textarea name="comment"></textarea><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      document
+        .getElementById('userForm')
+        .addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(this);
+
+          fetch(
+            'https://script.google.com/macros/s/AKfycbxijdT5dVa1rbNP6R-SESN4UGgGBUPYmPVPDHBltrxnXTXj3d9IvjE5OIWdaX0HLf5AxA/exec',
+            {
+              method: 'POST',
+              body: new URLSearchParams(formData),
+            }
+          )
+            .then(response => response.text())
+            .then(data => {
+              alert('Data submitted successfully!');
+              document.getElementById('userForm').reset();
+            })
+            .catch(error => {
+              alert('Error submitting data: ' + error);
+            });
+        });
+    </script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
