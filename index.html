@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&family=Raleway:wght@800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -20,56 +20,101 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container header-container"></div>
-    </header> -->
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a class="logo" href="http://www.senosgroup.com">
+          <svg class="icon-logo" width="37" height="44">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+          senos
+        </a>
+        <div class="header-nav-wrap">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#hero" class="header-nav-link">home</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#about" class="header-nav-link">about us</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#products" class="header-nav-link">products</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-nav-btn" type="button">contact us</button>
+        </div>
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg class="menu-open-icon" width="44" height="44">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-close" data-bg data-bg-close data-menu-close></div>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="menu-close-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="#hero" class="header-nav-link" data-menu-close>home</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#about" class="header-nav-link" data-menu-close>
+                about us
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#products" class="header-nav-link" data-menu-close>
+                products
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header-nav-btn" type="button" data-menu-close>
+          contact us
+        </button>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero" id="hero"></section> -->
+      <section class="hero" id="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            From Fields
+            <br />
+            <span class="lowercase">to</span>
+            Global Markets
+          </h1>
+          <p class="hero-subtitle">
+            trusted worldwide. driven
+            <span class="lowercase">by</span>
+            quality.
+          </p>
+          <a href="#products" class="hero-anchor">Explore Our Products</a>
+        </div>
+      </section>
       <section class="about" id="about">
         <div class="container about-container">
           <h2 class="about-title">About Us</h2>
-          <div class="about-top">
-            <p class="about-text">
-              <span class="accent">
-                Senos is not just a supplier — we are your trusted global
-                partner in agro trade.
-              </span>
-              With over 10 years of experience, we connect reliable producers
-              with international markets, emphasizing trust and quality.
-            </p>
-          </div>
-          <ul class="about-list">
-            <li class="about-item">
-              <svg class="about-icon" width="40" height="40">
-                <use href="./img/icons.svg#icon-international"></use>
-              </svg>
-              <p class="about-item-text">
-                <span class="accent">International</span>
-                Expertise
-              </p>
-            </li>
-            <li class="about-item">
-              <svg class="about-icon" width="40" height="40">
-                <use href="./img/icons.svg#icon-partnership"></use>
-              </svg>
-              <p class="about-item-text">
-                <span class="accent">Strong</span>
-                Partnerships
-              </p>
-            </li>
-            <li class="about-item">
-              <svg class="about-icon" width="40" height="40">
-                <use href="./img/icons.svg#icon-check-circle"></use>
-              </svg>
-              <p class="about-item-text">
-                <span class="accent">Commitment</span>
-                to Quality
-              </p>
-            </li>
-          </ul>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="container products-container">
+          <h2 class="products-title">Our Products</h2>
+        </div>
+      </section>
+      <section class="why" id="why">
+        <div class="container why-container">
+          <h2 class="why-title">Why Choose Senos</h2>
         </div>
       </section>
     </main>
+    <footer class="footer" id="footer">
+      <div class="container footer-container"></div>
+    </footer>
     <!-- <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -159,7 +204,7 @@
       </div>
     </div> -->
 
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
