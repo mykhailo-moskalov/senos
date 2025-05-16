@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 76px;
 }
 
 body {
@@ -52,7 +51,6 @@ h2 {
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   text-align: center;
   color: var(--dark-green);
 
@@ -63,10 +61,10 @@ h2 {
 }
 
 h3 {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   text-align: center;
   color: var(--dark-grey);
 
@@ -89,6 +87,7 @@ h3,
 p {
   margin: 0;
 }
+
 h1,
 h2,
 h3,
