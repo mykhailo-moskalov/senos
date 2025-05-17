@@ -217,8 +217,10 @@
 /* ------------MENU------------ */
 /* ------------HERO------------ */
 .hero {
+  max-width: 375px;
   color: var(--white);
   padding: 205px 0 88px;
+  margin: 0 auto;
   background: linear-gradient(rgba(43, 43, 43, 0.15), rgba(43, 43, 43, 0.15)),
     url('../img/hero/hero-mob.webp') no-repeat center/cover;
   @media screen and (min-resolution: 2x) {
@@ -227,6 +229,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 1280px;
     padding: 212px 140px;
     background: linear-gradient(rgba(43, 43, 43, 0.15), rgba(43, 43, 43, 0.15)),
       url('../img/hero/hero-desk.webp') no-repeat center/cover;
@@ -609,6 +612,14 @@
   @media screen and (min-width: 1280px) {
     font-size: 14px;
   }
+}
+
+.modal-field:has(.modal-input:not(:placeholder-shown):invalid) .modal-label {
+  color: red;
+}
+
+.modal-field:has(.modal-input:not(:placeholder-shown):valid) .modal-label {
+  color: var(--green);
 }
 
 .modal-input::placeholder {
