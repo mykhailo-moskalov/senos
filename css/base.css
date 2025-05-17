@@ -91,7 +91,8 @@ p {
 h1,
 h2,
 h3,
-p.hero-subtitle {
+p.hero-subtitle,
+p.footer-social-title {
   text-transform: capitalize;
 }
 span.lowercase {
