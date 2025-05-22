@@ -1,3 +1,3 @@
 IMask(document.getElementById('phone'), {
-  mask: '+{380}-00-000-00-00',
+  mask: '+0000000000000',
 });
