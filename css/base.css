@@ -12,7 +12,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--grey);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     font-size: 16px;
     line-height: 1.5;
   }
@@ -40,7 +40,7 @@ h1 {
   letter-spacing: -0.03em;
   color: var(--white);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     font-size: 56px;
     line-height: 1.07;
   }
@@ -54,7 +54,7 @@ h2 {
   text-align: center;
   color: var(--dark-green);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     font-size: 36px;
     line-height: 1.11;
   }
@@ -68,7 +68,7 @@ h3 {
   text-align: center;
   color: var(--dark-grey);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     font-size: 20px;
     line-height: 1.2;
   }
@@ -131,7 +131,7 @@ button:focus {
 section {
   padding: 60px 0;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1024px) {
     padding: 120px 0;
   }
 }
@@ -141,8 +141,8 @@ section {
   padding: 0 16px;
   margin: 0 auto;
 
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
     padding: 0 76px;
   }
 }
