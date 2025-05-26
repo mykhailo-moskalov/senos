@@ -357,12 +357,12 @@
 }
 
 .products-container {
-  padding: 60px 8px;
+  padding: 32px 8px;
   background-color: var(--cloud);
   border-radius: 12px;
 
   @media screen and (min-width: 1024px) {
-    padding: 120px 76px;
+    padding: 64px 76px;
   }
 }
 
