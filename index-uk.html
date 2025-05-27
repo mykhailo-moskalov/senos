@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SENOS</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..700&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a class="logo" href="http://www.senosgroup.com">
+          <svg class="icon-logo" width="37" height="44">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+          senos
+        </a>
+        <div class="header-nav-wrap">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#hero" class="header-nav-link">вгору</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#about" class="header-nav-link">про нас</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#products" class="header-nav-link">наша продукція</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-nav-btn" type="button" data-modal-open>
+            зв'яжіться з нами
+          </button>
+        </div>
+        <button class="menu-open-btn" type="button" data-menu-open>
+          <svg class="menu-open-icon" width="44" height="44">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-close" data-bg data-bg-close data-menu-close></div>
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="menu-close-icon" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a href="#hero" class="header-nav-link" data-menu-close>вгору</a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#about" class="header-nav-link" data-menu-close>
+                про нас
+              </a>
+            </li>
+            <li class="header-nav-item">
+              <a href="#products" class="header-nav-link" data-menu-close>
+                наша продукція
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="header-nav-btn"
+          type="button"
+          data-menu-close
+          data-modal-open
+        >
+          зв'яжіться з нами
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">
+            Від полів україни
+            <br />
+            <span class="lowercase">до</span>
+            світових ринків
+          </h1>
+          <p style="text-transform: none" class="hero-subtitle">
+            Якість, якій довіряють. Партнерство, що працює.
+          </p>
+          <a
+            style="text-transform: capitalize"
+            href="#products"
+            class="hero-anchor"
+          >
+            переглянути продукцію
+          </a>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container about-container">
+          <h2 class="about-title">про нас</h2>
+          <ul class="about-list">
+            <li class="about-item">
+              <svg class="about-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-globe"></use>
+              </svg>
+              <h3 class="about-item-title">Хто ми</h3>
+              <p class="about-item-text">
+                SENOS — це міжнародна торгова компанія, що спеціалізується на
+                експорті аграрної продукції з Чорноморського регіону. Ми
+                об'єднуємо надійних виробників із покупцями по всьому світу — на
+                основі стабільності, прозорості та професійного підходу.
+              </p>
+            </li>
+            <li class="about-item">
+              <svg class="about-icon" width="67" height="80">
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
+              <h3 class="about-item-title">Що ми пропонуємо</h3>
+              <p class="about-item-text">
+                Ми постачаємо зернові, бобові, олійні культури, рослинні олії та
+                корми. Усі продукти — лише з перевірених джерел, із повним
+                контролем якості та ефективною логістикою на кожному етапі.
+              </p>
+            </li>
+            <li class="about-item">
+              <svg class="about-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-handshake"></use>
+              </svg>
+              <h3 class="about-item-title">Наша місія</h3>
+              <p class="about-item-text">
+                Побудова довгострокових партнерств на основі довіри,
+                результативності та цінності. Ми допомагаємо нашим клієнтам
+                зростати через ефективну, безпечну та передбачувану міжнародну
+                торгівлю.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="container products-container">
+          <h2 class="products-title">наша продукція</h2>
+          <ul class="products-list">
+            <!-- 1 -->
+            <li class="products-item">
+              <div class="products-img-wrap">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/products/1/product-01-desk.webp    1x,
+                      ./img/products/1/product-01-desk@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./img/products/1/product-01-mob.webp    1x,
+                      ./img/products/1/product-01-mob@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/products/1/product-01-mob.webp"
+                    alt="Grains"
+                    sizes="(max-width: 1023px) 167.5px, 260px"
+                  />
+                </picture>
+                <ul class="products-img-list">
+                  <li class="products-img-item">Пшениця</li>
+                  <li class="products-img-item">Ячмінь</li>
+                  <li class="products-img-item">Кукурудза</li>
+                  <li class="products-img-item">Овес</li>
+                </ul>
+              </div>
+              <div class="products-item-text">
+                <h3 class="products-subtitle">зернові</h3>
+                <p class="products-img-hint">
+                  Нанатисніть, щоб побачити більше
+                </p>
+                <p class="products-img-hint">Наведіться, щоб побачити більше</p>
+              </div>
+            </li>
+            <!-- 2 -->
+            <li class="products-item">
+              <div class="products-img-wrap">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/products/2/product-02-desk.webp    1x,
+                      ./img/products/2/product-02-desk@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./img/products/2/product-02-mob.webp    1x,
+                      ./img/products/2/product-02-mob@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/products/2/product-02-mob.webp"
+                    alt="Pulses"
+                    sizes="(max-width: 1023px) 167.5px, 260px"
+                  />
+                </picture>
+                <ul class="products-img-list">
+                  <li class="products-img-item">Горох (цілий/колотий)</li>
+                  <li class="products-img-item">Сочевиця (червона/зелена)</li>
+                  <li class="products-img-item">Нут</li>
+                  <li class="products-img-item">Квасоля</li>
+                </ul>
+              </div>
+              <div class="products-item-text">
+                <h3 class="products-subtitle">бобові культури</h3>
+              </div>
+            </li>
+            <!-- 3 -->
+            <li class="products-item">
+              <div class="products-img-wrap">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/products/3/product-03-desk.webp    1x,
+                      ./img/products/3/product-03-desk@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./img/products/3/product-03-mob.webp    1x,
+                      ./img/products/3/product-03-mob@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/products/3/product-03-mob.webp"
+                    alt="Grains"
+                    sizes="(max-width: 1023px) 167.5px, 260px"
+                  />
+                </picture>
+                <ul class="products-img-list">
+                  <li class="products-img-item">
+                    Соняшникова (нерафінована/рафінована)
+                  </li>
+                  <li class="products-img-item">Соєва</li>
+                  <li class="products-img-item">Ріпакова</li>
+                </ul>
+              </div>
+              <div class="products-item-text">
+                <h3 class="products-subtitle">рослинні олії</h3>
+              </div>
+            </li>
+            <!-- 4 -->
+            <li class="products-item">
+              <div class="products-img-wrap">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/products/4/product-04-desk.webp    1x,
+                      ./img/products/4/product-04-desk@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./img/products/4/product-04-mob.webp    1x,
+                      ./img/products/4/product-04-mob@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/products/4/product-04-mob.webp"
+                    alt="Grains"
+                    sizes="(max-width: 1023px) 167.5px, 260px"
+                  />
+                </picture>
+                <ul class="products-img-list">
+                  <li class="products-img-item">Насіння соняшнику</li>
+                  <li class="products-img-item">Соя</li>
+                  <li class="products-img-item">Ріпак (канола),</li>
+                  <li class="products-img-item">Гірчиця</li>
+                  <li class="products-img-item">Льон</li>
+                </ul>
+              </div>
+              <div class="products-item-text">
+                <h3 class="products-subtitle">олійні культури</h3>
+              </div>
+            </li>
+            <!-- 5 -->
+            <li class="products-item">
+              <div class="products-img-wrap">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/products/5/product-05-desk.webp    1x,
+                      ./img/products/5/product-05-desk@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./img/products/5/product-05-mob.webp    1x,
+                      ./img/products/5/product-05-mob@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/products/5/product-05-mob.webp"
+                    alt="Grains"
+                    sizes="(max-width: 1023px) 167.5px, 260px"
+                  />
+                </picture>
+                <ul class="products-img-list">
+                  <li class="products-img-item">Соняшниковий шрот</li>
+                  <li class="products-img-item">Соєвий шрот</li>
+                  <li class="products-img-item">Лушпиння сої в гранулах</li>
+                  <li class="products-img-item">Пшеничні висівки</li>
+                  <li class="products-img-item">DDGS</li>
+                </ul>
+              </div>
+              <div class="products-item-text">
+                <h3 class="products-subtitle">кормові</h3>
+              </div>
+            </li>
+            <!-- 6 -->
+            <li class="products-item">
+              <div class="products-img-wrap">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="
+                      ./img/products/6/product-06-desk.webp    1x,
+                      ./img/products/6/product-06-desk@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1023px)"
+                    srcset="
+                      ./img/products/6/product-06-mob.webp    1x,
+                      ./img/products/6/product-06-mob@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="./img/products/6/product-06-mob.webp"
+                    alt="Grains"
+                    sizes="(max-width: 1023px) 167.5px, 260px"
+                  />
+                </picture>
+                <ul class="products-img-list">
+                  <li class="products-img-item">Білий кристалічний цукор</li>
+                </ul>
+              </div>
+              <div class="products-item-text">
+                <h3 class="products-subtitle">інші товари</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="why" id="why">
+        <div class="container why-container">
+          <h2 class="why-title">чому саме SENOS</h2>
+          <ul class="why-list">
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-international"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">міжнародна експертиза</h3>
+                <p class="why-item-text">
+                  Більше 10 років досвіду в агроекспорті та міжнародній
+                  логістиці
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-truck"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">надійна мережа постачальників</h3>
+                <p class="why-item-text">
+                  Перевірене походження, аудит якості на всіх етапах
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-figures"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">асортимент для глобального ринку</h3>
+                <p class="why-item-text">
+                  Від зернових і олійних — до спеціалізованих кормових рішень
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-check-circle"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">операційна точність</h3>
+                <p class="why-item-text">
+                  Чіткі строки, відповідальне виконання, мінімум ризиків
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-headset"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">партнерський підхід</h3>
+                <p class="why-item-text">
+                  Гнучкі умови співпраці та персоналізовані пропозиції
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-gears"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">постійне забезпечення якості</h3>
+                <p class="why-item-text">
+                  Стандартизовані процедури контролю якості від походження до
+                  кінцевої поставки
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-shield"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">прозорість та надійність</h3>
+                <p class="why-item-text">
+                  Чітка комунікація, повна відстежуваність та суворе дотримання
+                  домовленостей
+                </p>
+              </div>
+            </li>
+            <li class="why-item">
+              <svg class="why-icon" width="80" height="80">
+                <use href="./img/icons.svg#icon-handshake"></use>
+              </svg>
+              <div class="why-item-content">
+                <h3 class="why-item-title">довгострокові відносини</h3>
+                <p class="why-item-text">
+                  Ми не шукаємо угод на один раз — ми будуємо стабільні
+                  партнерства
+                </p>
+              </div>
+            </li>
+          </ul>
+          <button class="header-nav-btn why-btn" type="button" data-modal-open>
+            зв'яжіться з нами
+          </button>
+        </div>
+      </section>
+    </main>
+    <div
+      class="lang-choose"
+      style="
+        max-width: 375px;
+        padding: 0 16px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+
+        @media screen and (min-width: 1024px) {
+          max-width: 1024px;
+          padding: 0 76px;
+        }
+      "
+    >
+      <a href="./index-en.html">en</a>
+      <a href="./index-uk.html">uk</a>
+      <a href="./index-tr.html">tr</a>
+      <a href="./index-ar.html">ar</a>
+      <a href="./index-zh.html">zh</a>
+      <a href="./index-es.html">es</a>
+      <a href="./index-fr.html">fr</a>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <a class="logo" href="http://www.senosgroup.com">
+            <svg class="icon-logo" width="37" height="44">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
+            senos
+          </a>
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a href="#hero" class="header-nav-link">вгору</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#about" class="header-nav-link">про нас</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#products" class="header-nav-link">наша продукція</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="footer-copyright">
+            Copyright&copy;
+            <span style="text-transform: uppercase">SENOS LLC</span>
+            . All rights reserved.
+          </p>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social-title">соціальні мережі</p>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a
+                href="https://www.linkedin.com/company/senos-llc/"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a
+                href="https://wa.me/message/6IDLJDKU3REYI1"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <!-- <li class="footer-social-item">
+              <a href="" target="_blank" class="footer-social-link">
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-wechat"></use>
+                </svg>
+              </a>
+            </li> -->
+            <li class="footer-social-item">
+              <a
+                href="https://t.me/senosgroup"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <svg class="footer-social-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <address class="footer-address">
+          <p class="footer-address-title">Наші контакти</p>
+          <ul class="footer-address-list">
+            <li class="footer-address-item">
+              <svg class="footer-address-icon" width="18" height="24">
+                <use href="./img/icons.svg#icon-phone"></use>
+              </svg>
+              <a href="tel:+380631901410" class="footer-address-link">
+                +380-63-190-14-10
+              </a>
+            </li>
+            <li class="footer-address-item">
+              <svg class="footer-address-icon" width="18" height="24">
+                <use href="./img/icons.svg#icon-email"></use>
+              </svg>
+              <a href="mailto:trade@senosgroup.com" class="footer-address-link">
+                trade@senosgroup.com
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+    <div
+      class="modal-bg"
+      data-modal-bg
+      data-modal-close
+      data-modal-bg-close
+    ></div>
+    <div class="modal" data-modal>
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-title">
+        Надішліть нам коротке повідомлення — і ми оперативно вийдемо на зв'язок
+      </p>
+      <form class="modal-form">
+        <div class="modal-field">
+          <label for="name" class="modal-label">Ім'я та прізвище</label>
+          <div class="modal-input-wrap">
+            <input
+              type="text"
+              name="name"
+              class="modal-input"
+              title="Please enter your name"
+              placeholder=""
+              required
+              id="name"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./img/icons.svg#icon-user"></use>
+            </svg>
+            <p class="text-valid">Успішно!</p>
+            <p class="text-invalid">Недійсне ім'я, спробуйте ще раз</p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="phone" class="modal-label">Телефон</label>
+          <div class="modal-input-wrap">
+            <input
+              class="modal-input"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder=""
+              pattern="^\+\d{10-}$"
+              title="Format: +XXXXXXXXXX..."
+              required
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./img/icons.svg#icon-phone"></use>
+            </svg>
+            <p class="text-valid">Успішно!</p>
+            <p class="text-invalid">
+              Недійсний номер телефону, спробуйте ще раз
+            </p>
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="email" class="modal-label">Електронна пошта</label>
+          <div class="modal-input-wrap">
+            <input
+              type="email"
+              name="email"
+              class="modal-input"
+              title="Format: your.email@example.com"
+              placeholder=""
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,})\.([A-z]{2,8})"
+              required
+              id="email"
+            />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./img/icons.svg#icon-email"></use>
+            </svg>
+            <p class="text-valid">Успішно!</p>
+            <p class="text-invalid">
+              Недійсна електронна адреса, спробуйте ще раз
+            </p>
+          </div>
+        </div>
+        <div class="modal-field modal-textarea-field">
+          <label for="comment" class="modal-label">Повідомлення</label>
+          <textarea
+            name="comment"
+            class="modal-textarea"
+            rows="5"
+            title="Please enter your comment"
+            id="comment"
+            placeholder="Text input"
+          ></textarea>
+        </div>
+        <div class="modal-checkbox-box">
+          <input
+            type="checkbox"
+            name="user-privacy"
+            id="user-privacy"
+            value="true"
+            class="user-privacy visually-hidden"
+            required
+          />
+          <label for="user-privacy" class="modal-agree-label">
+            <span class="modal-agree">
+              <svg class="icon-check" width="10" height="10">
+                <use href="./img/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            <div>
+              Я приймаю умови та погоджуюся з
+              <a
+                href="./privacy-policy.html"
+                target="_blank"
+                class="modal-policy"
+              >
+                Політикою конфіденційності
+              </a>
+            </div>
+          </label>
+        </div>
+        <button type="submit" class="modal-send-btn">
+          Надіслати запит
+          <svg class="icon-send" width="14" height="14">
+            <use href="./img/icons.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
