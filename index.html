@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,6 +18,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/translations.js" defer></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -32,19 +35,45 @@
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a href="#hero" class="header-nav-link">home</a>
+                <a id="headerNavHome" href="#hero" class="header-nav-link"></a>
               </li>
               <li class="header-nav-item">
-                <a href="#about" class="header-nav-link">about us</a>
+                <a
+                  id="headerNavAbout"
+                  href="#about"
+                  class="header-nav-link"
+                ></a>
               </li>
               <li class="header-nav-item">
-                <a href="#products" class="header-nav-link">products</a>
+                <a
+                  id="headerNavProducts"
+                  href="#products"
+                  class="header-nav-link"
+                ></a>
               </li>
             </ul>
           </nav>
-          <button class="header-nav-btn" type="button" data-modal-open>
-            contact us
-          </button>
+          <button
+            id="headerNavBtn"
+            class="header-nav-btn"
+            type="button"
+            data-modal-open
+          ></button>
+          <label class="language-label" for="language-select">
+            <select
+              class="language-select"
+              id="language-select"
+              onchange="switchLanguage(this.value)"
+            >
+              <option class="language-option" value="en">EN</option>
+              <option class="language-option" value="uk">UK</option>
+              <option class="language-option" value="tr">TR</option>
+              <option class="language-option" value="ar">AR</option>
+              <option class="language-option" value="zh">ZH</option>
+              <option class="language-option" value="es">ES</option>
+              <option class="language-option" value="fr">FR</option>
+            </select>
+          </label>
         </div>
         <button class="menu-open-btn" type="button" data-menu-open>
           <svg class="menu-open-icon" width="44" height="44">
@@ -62,90 +91,93 @@
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a href="#hero" class="header-nav-link" data-menu-close>home</a>
+              <a
+                id="menuNavHome"
+                href="#hero"
+                class="header-nav-link"
+                data-menu-close
+              ></a>
             </li>
             <li class="header-nav-item">
-              <a href="#about" class="header-nav-link" data-menu-close>
-                about us
-              </a>
+              <a
+                id="menuNavAbout"
+                href="#about"
+                class="header-nav-link"
+                data-menu-close
+              ></a>
             </li>
             <li class="header-nav-item">
-              <a href="#products" class="header-nav-link" data-menu-close>
-                products
-              </a>
+              <a
+                id="menuNavProducts"
+                href="#products"
+                class="header-nav-link"
+                data-menu-close
+              ></a>
             </li>
           </ul>
         </nav>
+        <label class="language-label" for="menu-language-select">
+          <select
+            id="menu-language-select"
+            onchange="switchLanguage(this.value)"
+          >
+            <option value="en">EN</option>
+            <option value="uk">UK</option>
+            <option value="tr">TR</option>
+            <option value="ar">AR</option>
+            <option value="zh">ZH</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+          </select>
+        </label>
         <button
+          id="menuNavBtn"
           class="header-nav-btn"
           type="button"
           data-menu-close
           data-modal-open
-        >
-          contact us
-        </button>
+        ></button>
       </div>
     </header>
     <main>
       <section class="hero" id="hero">
         <div class="container hero-container">
-          <h1 class="hero-title">
-            From Fields
-            <br />
-            <span class="lowercase">to</span>
-            Global Markets
-          </h1>
-          <p class="hero-subtitle">
-            trusted worldwide. driven
-            <span class="lowercase">by</span>
-            quality.
-          </p>
-          <a href="#products" class="hero-anchor">Explore Our Products</a>
+          <h1 id="heroTitle" class="hero-title"></h1>
+          <p id="heroSubtitle" class="hero-subtitle"></p>
+          <a id="heroBtn" href="#products" class="hero-anchor"></a>
         </div>
       </section>
       <section class="about" id="about">
         <div class="container about-container">
-          <h2 class="about-title">About Us</h2>
+          <h2 id="aboutTitle" class="about-title"></h2>
           <ul class="about-list">
             <li class="about-item">
               <svg class="about-icon" width="80" height="80">
                 <use href="./img/icons.svg#icon-globe"></use>
               </svg>
-              <h3 class="about-item-title">Who we are</h3>
-              <p class="about-item-text">
-                SENOS is an international trading company exporting agri
-                commodities from the Black Sea region, connecting reliable
-                producers with with buyers worldwide.
-              </p>
+              <h3 id="aboutSubtitle1" class="about-item-title"></h3>
+              <p id="aboutText1" class="about-item-text"></p>
             </li>
             <li class="about-item">
               <svg class="about-icon" width="67" height="80">
                 <use href="./img/icons.svg#icon-logo"></use>
               </svg>
-              <h3 class="about-item-title">what we offer</h3>
-              <p class="about-item-text">
-                We supply grains, pulses, oilseeds, edible oils, and animal feed
-                — backed by trusted suppliers, quality control, and smooth
-                logistics at every step.
-              </p>
+              <h3 id="aboutSubtitle2" class="about-item-title"></h3>
+              <p id="aboutText2" class="about-item-text"></p>
             </li>
             <li class="about-item">
               <svg class="about-icon" width="80" height="80">
                 <use href="./img/icons.svg#icon-handshake"></use>
               </svg>
-              <h3 class="about-item-title">our mission</h3>
-              <p class="about-item-text">
-                To build long-term partnerships through trust, performance, and
-                value — helping our clients grow through reliable and efficient
-                trade.
-              </p>
+              <h3 id="aboutSubtitle3" class="about-item-title"></h3>
+              <p id="aboutText3" class="about-item-text"></p>
             </li>
           </ul>
         </div>
       </section>
       <section class="products" id="products">
         <div class="container products-container">
-          <h2 class="products-title">Our Products</h2>
+          <h2 id="productsTitle" class="products-title"></h2>
           <ul class="products-list">
             <!-- 1 -->
             <li class="products-item">
@@ -172,16 +204,16 @@
                   />
                 </picture>
                 <ul class="products-img-list">
-                  <li class="products-img-item">Wheat</li>
-                  <li class="products-img-item">Barley</li>
-                  <li class="products-img-item">Corn</li>
-                  <li class="products-img-item">Oats</li>
+                  <li id="productsText11" class="products-img-item"></li>
+                  <li id="productsText12" class="products-img-item"></li>
+                  <li id="productsText13" class="products-img-item"></li>
+                  <li id="productsText14" class="products-img-item"></li>
                 </ul>
               </div>
               <div class="products-item-text">
-                <h3 class="products-subtitle">grains</h3>
-                <p class="products-img-hint">Tap to see more</p>
-                <p class="products-img-hint">Aim to see more</p>
+                <h3 id="productsSubtitle1" class="products-subtitle"></h3>
+                <p id="productsHintMob" class="products-img-hint"></p>
+                <p id="productsHintDesk" class="products-img-hint"></p>
               </div>
             </li>
             <!-- 2 -->
@@ -209,14 +241,14 @@
                   />
                 </picture>
                 <ul class="products-img-list">
-                  <li class="products-img-item">Whole/Split Peas</li>
-                  <li class="products-img-item">Red/Green Lentils</li>
-                  <li class="products-img-item">Chickpeas</li>
-                  <li class="products-img-item">Beans</li>
+                  <li id="productsText21" class="products-img-item"></li>
+                  <li id="productsText22" class="products-img-item"></li>
+                  <li id="productsText23" class="products-img-item"></li>
+                  <li id="productsText24" class="products-img-item"></li>
                 </ul>
               </div>
               <div class="products-item-text">
-                <h3 class="products-subtitle">pulses</h3>
+                <h3 id="productsSubtitle2" class="products-subtitle"></h3>
               </div>
             </li>
             <!-- 3 -->
@@ -244,15 +276,13 @@
                   />
                 </picture>
                 <ul class="products-img-list">
-                  <li class="products-img-item">
-                    Crude and Refined Sunflower Oil
-                  </li>
-                  <li class="products-img-item">Soybean Oil</li>
-                  <li class="products-img-item">Rapeseed Oil</li>
+                  <li id="productsText31" class="products-img-item"></li>
+                  <li id="productsText32" class="products-img-item"></li>
+                  <li id="productsText33" class="products-img-item"></li>
                 </ul>
               </div>
               <div class="products-item-text">
-                <h3 class="products-subtitle">edible oils</h3>
+                <h3 id="productsSubtitle3" class="products-subtitle"></h3>
               </div>
             </li>
             <!-- 4 -->
@@ -280,15 +310,15 @@
                   />
                 </picture>
                 <ul class="products-img-list">
-                  <li class="products-img-item">Sunflower Seeds</li>
-                  <li class="products-img-item">Soybeans</li>
-                  <li class="products-img-item">Rapeseeds (Canola)</li>
-                  <li class="products-img-item">Mustard Seeds</li>
-                  <li class="products-img-item">Flax Seeds</li>
+                  <li id="productsText41" class="products-img-item"></li>
+                  <li id="productsText42" class="products-img-item"></li>
+                  <li id="productsText43" class="products-img-item"></li>
+                  <li id="productsText44" class="products-img-item"></li>
+                  <li id="productsText45" class="products-img-item"></li>
                 </ul>
               </div>
               <div class="products-item-text">
-                <h3 class="products-subtitle">oilseeds</h3>
+                <h3 id="productsSubtitle4" class="products-subtitle"></h3>
               </div>
             </li>
             <!-- 5 -->
@@ -316,17 +346,15 @@
                   />
                 </picture>
                 <ul class="products-img-list">
-                  <li class="products-img-item">Sunflower Meal</li>
-                  <li class="products-img-item">Soybean Meal</li>
-                  <li class="products-img-item">Wheat Bran</li>
-                  <li class="products-img-item">
-                    DDGS (Dried Distillers Grains with Soluble)
-                  </li>
-                  <li class="products-img-item">Pelleted Soybean Hulls</li>
+                  <li id="productsText51" class="products-img-item"></li>
+                  <li id="productsText52" class="products-img-item"></li>
+                  <li id="productsText53" class="products-img-item"></li>
+                  <li id="productsText54" class="products-img-item"></li>
+                  <li id="productsText55" class="products-img-item"></li>
                 </ul>
               </div>
               <div class="products-item-text">
-                <h3 class="products-subtitle">animal feed &amp; meals</h3>
+                <h3 id="productsSubtitle5" class="products-subtitle"></h3>
               </div>
             </li>
             <!-- 6 -->
@@ -354,11 +382,11 @@
                   />
                 </picture>
                 <ul class="products-img-list">
-                  <li class="products-img-item">White Crystal Sugar</li>
+                  <li id="productsText61" class="products-img-item"></li>
                 </ul>
               </div>
               <div class="products-item-text">
-                <h3 class="products-subtitle">other products</h3>
+                <h3 id="productsSubtitle6" class="products-subtitle"></h3>
               </div>
             </li>
           </ul>
@@ -366,18 +394,15 @@
       </section>
       <section class="why" id="why">
         <div class="container why-container">
-          <h2 class="why-title">Why Choose Senos</h2>
+          <h2 id="whyTitle" class="why-title"></h2>
           <ul class="why-list">
             <li class="why-item">
               <svg class="why-icon" width="80" height="80">
                 <use href="./img/icons.svg#icon-international"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">International Expertise</h3>
-                <p class="why-item-text">
-                  Over 10 years of experience in international agri-commodity
-                  trade
-                </p>
+                <h3 id="whySubtitle1" class="why-item-title"></h3>
+                <p id="whyText1" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -385,11 +410,8 @@
                 <use href="./img/icons.svg#icon-truck"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Trusted Supplier Network</h3>
-                <p class="why-item-text">
-                  Reliable partnerships with vetted suppliers and strict quality
-                  control at every stage
-                </p>
+                <h3 id="whySubtitle2" class="why-item-title"></h3>
+                <p id="whyText2" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -397,11 +419,8 @@
                 <use href="./img/icons.svg#icon-figures"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Product Diversity</h3>
-                <p class="why-item-text">
-                  Broad portfolio including grains, oilseeds, edible oils,
-                  animal feed, and processed agri-products
-                </p>
+                <h3 id="whySubtitle3" class="why-item-title"></h3>
+                <p id="whyText3" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -409,11 +428,8 @@
                 <use href="./img/icons.svg#icon-check-circle"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Operational Efficiency</h3>
-                <p class="why-item-text">
-                  Streamlined logistics, fast execution, and professional
-                  delivery management
-                </p>
+                <h3 id="whySubtitle4" class="why-item-title"></h3>
+                <p id="whyText4" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -421,11 +437,8 @@
                 <use href="./img/icons.svg#icon-headset"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Customer-Focused Approach</h3>
-                <p class="why-item-text">
-                  Tailored solutions and flexible terms to meet each client’s
-                  specific needs
-                </p>
+                <h3 id="whySubtitle5" class="why-item-title"></h3>
+                <p id="whyText5" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -433,10 +446,8 @@
                 <use href="./img/icons.svg#icon-gears"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Consistent Quality Assurance</h3>
-                <p class="why-item-text">
-                  Standardized quality procedures from origin to final delivery
-                </p>
+                <h3 id="whySubtitle6" class="why-item-title"></h3>
+                <p id="whyText6" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -444,11 +455,8 @@
                 <use href="./img/icons.svg#icon-shield"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Transparency & Reliability</h3>
-                <p class="why-item-text">
-                  Clear communication, full traceability, and strict commitment
-                  to agreements
-                </p>
+                <h3 id="whySubtitle7" class="why-item-title"></h3>
+                <p id="whyText7" class="why-item-text"></p>
               </div>
             </li>
             <li class="why-item">
@@ -456,44 +464,20 @@
                 <use href="./img/icons.svg#icon-handshake"></use>
               </svg>
               <div class="why-item-content">
-                <h3 class="why-item-title">Long-Term Partnerships</h3>
-                <p class="why-item-text">
-                  Focused on building lasting business relationships — not
-                  one-time transactions
-                </p>
+                <h3 id="whySubtitle8" class="why-item-title"></h3>
+                <p id="whyText8" class="why-item-text"></p>
               </div>
             </li>
           </ul>
-          <button class="header-nav-btn why-btn" type="button" data-modal-open>
-            contact us
-          </button>
+          <button
+            id="whyBtn"
+            class="header-nav-btn why-btn"
+            type="button"
+            data-modal-open
+          ></button>
         </div>
       </section>
     </main>
-    <div
-      class="lang-choose"
-      style="
-        max-width: 375px;
-        padding: 0 16px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-
-        @media screen and (min-width: 1024px) {
-          max-width: 1024px;
-          padding: 0 76px;
-        }
-      "
-    >
-      <a href="./index-en.html">en</a>
-      <a href="./index-uk.html">uk</a>
-      <a href="./index-tr.html">tr</a>
-      <a href="./index-ar.html">ar</a>
-      <a href="./index-zh.html">zh</a>
-      <a href="./index-es.html">es</a>
-      <a href="./index-fr.html">fr</a>
-    </div>
     <footer class="footer" id="footer">
       <div class="container footer-container">
         <div class="footer-top">
@@ -506,24 +490,28 @@
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a href="#hero" class="header-nav-link">home</a>
+                <a id="footerNavHome" href="#hero" class="header-nav-link"></a>
               </li>
               <li class="header-nav-item">
-                <a href="#about" class="header-nav-link">about us</a>
+                <a
+                  id="footerNavAbout"
+                  href="#about"
+                  class="header-nav-link"
+                ></a>
               </li>
               <li class="header-nav-item">
-                <a href="#products" class="header-nav-link">products</a>
+                <a
+                  id="footerNavProducts"
+                  href="#products"
+                  class="header-nav-link"
+                ></a>
               </li>
             </ul>
           </nav>
-          <p class="footer-copyright">
-            Copyright&copy;
-            <span style="text-transform: uppercase">SENOS LLC</span>
-            . All rights reserved.
-          </p>
+          <p id="footerCopyright" class="footer-copyright"></p>
         </div>
         <div class="footer-social">
-          <p class="footer-social-title">social media</p>
+          <p id="footerSocial" class="footer-social-title"></p>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a
@@ -547,13 +535,6 @@
                 </svg>
               </a>
             </li>
-            <!-- <li class="footer-social-item">
-              <a href="" target="_blank" class="footer-social-link">
-                <svg class="footer-social-icon" width="24" height="24">
-                  <use href="./img/icons.svg#icon-wechat"></use>
-                </svg>
-              </a>
-            </li> -->
             <li class="footer-social-item">
               <a
                 href="https://t.me/senosgroup"
@@ -568,23 +549,27 @@
           </ul>
         </div>
         <address class="footer-address">
-          <p class="footer-address-title">Our contacts</p>
+          <p id="footerContacts" class="footer-address-title"></p>
           <ul class="footer-address-list">
             <li class="footer-address-item">
               <svg class="footer-address-icon" width="18" height="24">
                 <use href="./img/icons.svg#icon-phone"></use>
               </svg>
-              <a href="tel:+380631901410" class="footer-address-link">
-                +380-63-190-14-10
-              </a>
+              <a
+                id="footerPhone"
+                href="tel:+380631901410"
+                class="footer-address-link"
+              ></a>
             </li>
             <li class="footer-address-item">
               <svg class="footer-address-icon" width="18" height="24">
                 <use href="./img/icons.svg#icon-email"></use>
               </svg>
-              <a href="mailto:trade@senosgroup.com" class="footer-address-link">
-                trade@senosgroup.com
-              </a>
+              <a
+                id="footerEmail"
+                href="mailto:trade@senosgroup.com"
+                class="footer-address-link"
+              ></a>
             </li>
           </ul>
         </address>
@@ -602,12 +587,10 @@
           <use href="./img/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <p class="modal-title">
-        Leave your details and our team will contact you shortly
-      </p>
+      <p id="modalTitle" class="modal-title"></p>
       <form class="modal-form">
         <div class="modal-field">
-          <label for="name" class="modal-label">Name</label>
+          <label id="modalLabelName" for="name" class="modal-label"></label>
           <div class="modal-input-wrap">
             <input
               type="text"
@@ -621,12 +604,12 @@
             <svg class="modal-icon" width="18" height="24">
               <use href="./img/icons.svg#icon-user"></use>
             </svg>
-            <p class="text-valid">Succesful!</p>
-            <p class="text-invalid">Invalid name, please try again</p>
+            <p id="modalTextValid1" class="text-valid"></p>
+            <p id="modalTextInvalid1" class="text-invalid"></p>
           </div>
         </div>
         <div class="modal-field">
-          <label for="phone" class="modal-label">Phone</label>
+          <label id="modalLabelPhone" for="phone" class="modal-label"></label>
           <div class="modal-input-wrap">
             <input
               class="modal-input"
@@ -641,12 +624,12 @@
             <svg class="modal-icon" width="18" height="24">
               <use href="./img/icons.svg#icon-phone"></use>
             </svg>
-            <p class="text-valid">Succesful!</p>
-            <p class="text-invalid">Invalid phone, please try again</p>
+            <p id="modalTextValid2" class="text-valid"></p>
+            <p id="modalTextInvalid2" class="text-invalid"></p>
           </div>
         </div>
         <div class="modal-field">
-          <label for="email" class="modal-label">Email</label>
+          <label id="modalLabelEmail" for="email" class="modal-label"></label>
           <div class="modal-input-wrap">
             <input
               type="email"
@@ -661,12 +644,16 @@
             <svg class="modal-icon" width="18" height="24">
               <use href="./img/icons.svg#icon-email"></use>
             </svg>
-            <p class="text-valid">Succesful!</p>
-            <p class="text-invalid">Invalid email, please try again</p>
+            <p id="modalTextValid3" class="text-valid"></p>
+            <p id="modalTextInvalid3" class="text-invalid"></p>
           </div>
         </div>
         <div class="modal-field modal-textarea-field">
-          <label for="comment" class="modal-label">Comment</label>
+          <label
+            id="modalLabelComment"
+            for="comment"
+            class="modal-label"
+          ></label>
           <textarea
             name="comment"
             class="modal-textarea"
@@ -691,28 +678,22 @@
                 <use href="./img/icons.svg#icon-check"></use>
               </svg>
             </span>
-            <div>
-              I accept the terms and conditions of the
+            <div id="modalAgreeText">
               <a
+                id="modalAgreeLink"
                 href="./privacy-policy.html"
                 target="_blank"
                 class="modal-policy"
-              >
-                Privacy Policy
-              </a>
+              ></a>
             </div>
           </label>
         </div>
-        <button type="submit" class="modal-send-btn">
-          Send
+        <button id="modalBtn" type="submit" class="modal-send-btn">
           <svg class="icon-send" width="14" height="14">
             <use href="./img/icons.svg#icon-send"></use>
           </svg>
         </button>
       </form>
     </div>
-
-    <script src="./js/menu.js"></script>
-    <script src="./js/modal.js"></script>
   </body>
 </html>

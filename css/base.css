@@ -88,17 +88,6 @@ p {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-p.hero-subtitle,
-p.footer-social-title {
-  text-transform: capitalize;
-}
-span.lowercase {
-  text-transform: none;
-}
-
 ul,
 ol {
   margin: 0;
@@ -114,7 +103,6 @@ img {
 
 button {
   cursor: pointer;
-  text-transform: capitalize;
   transition: transform 200ms ease-in-out;
 }
 

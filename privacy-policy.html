@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/pp-lang.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -28,82 +29,76 @@
           </svg>
           senos
         </a>
-        <nav class="header-nav">
-          <a href="./index.html" class="header-nav-link privacy-policy-back">
-            Back
-            <span class="lowercase">to the</span>
-            main page
-          </a>
+        <nav style="display: flex; gap: 24px" class="header-nav">
+          <a
+            id="ppNavLink"
+            href="./index.html"
+            class="header-nav-link privacy-policy-back"
+          ></a>
+          <label for="pp-language-select">
+            <select
+              id="pp-language-select"
+              onchange="ppSwitchLanguage(this.value)"
+            >
+              <option value="en">EN</option>
+              <option value="uk">UK</option>
+              <option value="tr">TR</option>
+              <option value="ar">AR</option>
+              <option value="zh">ZH</option>
+              <option value="es">ES</option>
+              <option value="fr">FR</option>
+            </select>
+          </label>
         </nav>
       </div>
     </header>
     <main>
       <section class="privacy-policy">
         <div class="container privacy-policy-container">
-          <h1 class="privacy-policy-title">Privacy Policy</h1>
+          <h1 id="ppTitle" class="privacy-policy-title"></h1>
           <ul class="privacy-policy-list">
             <li class="privacy-policy-item">
-              <p class="privacy-policy-text">
-                At SENOS LLC, we respect your privacy and the trust you place in
-                us.
-              </p>
+              <p id="ppText1" class="privacy-policy-text"></p>
             </li>
             <li class="privacy-policy-item">
-              <p class="privacy-policy-text">
-                We collect and process only the information that is necessary to
-                communicate with you, respond to inquiries, and provide relevant
-                information about our products and services. This may include
-                your name, company, email address, phone number, and any message
-                you send us through the website.
-              </p>
+              <p id="ppText2" class="privacy-policy-text"></p>
             </li>
             <li class="privacy-policy-item">
-              <p class="privacy-policy-text">
-                We do not sell, rent, or share your personal data with third
-                parties unless required by law or necessary to operate our
-                website securely and effectively.
-              </p>
+              <p id="ppText3" class="privacy-policy-text"></p>
             </li>
             <li class="privacy-policy-item">
-              <p class="privacy-policy-text">
-                Cookies may be used to improve your browsing experience and help
-                us understand how visitors interact with our site. You can
-                manage cookie preferences through your browser settings.
-              </p>
+              <p id="ppText4" class="privacy-policy-text"></p>
             </li>
             <li class="privacy-policy-item">
-              <p class="privacy-policy-text">
-                All information is stored securely. You may contact us at any
-                time to request access to your data or to ask questions about
-                how it is used.
-              </p>
+              <p id="ppText5" class="privacy-policy-text"></p>
             </li>
           </ul>
           <address class="footer-address">
-            <p style="font-weight: 600" class="footer-address-title">
-              Our contacts
-            </p>
+            <p
+              id="ppContacts"
+              style="font-weight: 600"
+              class="footer-address-title"
+            ></p>
             <ul class="footer-address-list">
               <li class="footer-address-item">
-                <span style="font-weight: 500">Our Email:</span>
+                <span id="ppEmailText" style="font-weight: 500"></span>
                 <a
+                  id="ppEmail"
                   href="mailto:trade@senosgroup.com"
                   class="footer-address-link"
-                >
-                  trade@senosgroup.com
-                </a>
+                ></a>
               </li>
               <li class="footer-address-item">
-                <span style="font-weight: 500">Our Website:</span>
-                <a href="./index.html" class="footer-address-link">
-                  senosgroup.com
-                </a>
+                <span id="ppSiteText" style="font-weight: 500"></span>
+                <a
+                  id="ppSite"
+                  href="http://www.senosgroup.com"
+                  class="footer-address-link"
+                ></a>
               </li>
             </ul>
           </address>
-          <p class="privacy-policy-text">
-            By using this website, you agree to this policy.
-          </p>
+          <p id="ppAgree" class="privacy-policy-text"></p>
         </div>
       </section>
     </main>

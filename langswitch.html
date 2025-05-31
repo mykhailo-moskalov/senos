@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Language Switcher</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      select {
+        padding: 5px;
+        margin-top: 10px;
+        border: none;
+        appearance: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <p id="description"></p>
+
+    <label for="language-select">LANG</label>
+    <select id="language-select" onchange="switchLanguage(this.value)">
+      <option value="en">English</option>
+      <option value="es">Espa?ol</option>
+      <option value="fr">Fran?ais</option>
+      <option value="de">Deutsch</option>
+    </select>
+
+    <script>
+      const translations = {
+        en: {
+          heading: 'Hello!',
+          description: 'Welcome to our website.',
+        },
+        es: {
+          heading: '?Hola!',
+          description: 'Bienvenido a nuestro sitio web.',
+        },
+        fr: {
+          heading: 'Bonjour !',
+          description: 'Bienvenue sur notre site Web.',
+        },
+        de: {
+          heading: 'Hallo!',
+          description: 'Willkommen auf unserer Webseite.',
+        },
+      };
+
+      function switchLanguage(lang) {
+        const t = translations[lang];
+        if (!t) return;
+        document.getElementById('heading').innerText = t.heading;
+        document.getElementById('description').innerText = t.description;
+      }
+
+      // Set initial content from default dropdown value
+      window.onload = () => {
+        const defaultLang = document.getElementById('language-select').value;
+        switchLanguage(defaultLang);
+      };
+    </script>
+  </body>
+</html>

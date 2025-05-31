@@ -1,0 +1,65 @@
+const translations = {
+  en: {
+    //PRIVACY POLICY
+    ppNavLink: 'Back to the Main Page',
+
+    ppTitle: 'Privacy Policy',
+
+    ppText1:
+      'At SENOS LLC, we respect your privacy and the trust you place in us.',
+    ppText2:
+      'We collect and process only the information that is necessary to communicate with you, respond to inquiries, and provide relevant information about our products and services. This may include your name, company, email address, phone number, and any message you send us through the website.',
+    ppText3:
+      'We do not sell, rent, or share your personal data with third parties unless required by law or necessary to operate our website securely and effectively.',
+    ppText4:
+      'Cookies may be used to improve your browsing experience and help us understand how visitors interact with our site. You can manage cookie preferences through your browser settings.',
+    ppText5:
+      'All information is stored securely. You may contact us at any time to request access to your data or to ask questions about how it is used.',
+
+    ppContacts: 'Our contacts',
+    ppEmailText: 'Our Email:',
+    ppEmail: 'trade@senosgroup.com',
+    ppSiteText: 'Our Website:',
+    ppSite: 'senosgroup.com',
+
+    ppAgree: 'By using this website, you agree to this policy.',
+  },
+
+  uk: {},
+
+  tr: {},
+
+  ar: {},
+
+  zh: {},
+
+  es: {},
+
+  fr: {},
+};
+
+function ppSwitchLanguage(ppLanguageCode) {
+  console.log('Switching language to:', ppLanguageCode);
+  const t = translations[ppLanguageCode];
+  if (!t) return;
+  //PRIVACY POLICY
+  document.getElementById('ppNavLink').innerText = t.ppNavLink;
+  document.getElementById('ppTitle').innerText = t.ppTitle;
+  document.getElementById('ppText1').innerText = t.ppText1;
+  document.getElementById('ppText2').innerText = t.ppText2;
+  document.getElementById('ppText3').innerText = t.ppText3;
+  document.getElementById('ppText4').innerText = t.ppText4;
+  document.getElementById('ppText5').innerText = t.ppText5;
+  document.getElementById('ppContacts').innerText = t.ppContacts;
+  document.getElementById('ppEmailText').innerText = t.ppEmailText;
+  document.getElementById('ppEmail').innerText = t.ppEmail;
+  document.getElementById('ppSiteText').innerText = t.ppSiteText;
+  document.getElementById('ppSite').innerText = t.ppSite;
+  document.getElementById('ppAgree').innerText = t.ppAgree;
+}
+
+// Set initial content from default dropdown value
+window.onload = () => {
+  const ppDefaultLang = document.getElementById('pp-language-select').value;
+  ppSwitchLanguage(ppDefaultLang);
+};
