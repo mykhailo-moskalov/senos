@@ -416,7 +416,7 @@
 
 .products-img-list {
   list-style-type: circle;
-  background-color: var(--white);
+  background-color: var(--cloud);
   border-radius: 45px;
   display: block;
   position: absolute;
