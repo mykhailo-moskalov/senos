@@ -1,0 +1,130 @@
+.products {
+  padding: 0 8px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0 20px;
+  }
+}
+
+.products-container {
+  padding: 32px 8px;
+  background-color: var(--cloud);
+  border-radius: 12px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 64px 76px;
+  }
+}
+
+.products-title {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 64px;
+  }
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1024px) {
+    gap: 52px 26px;
+  }
+}
+
+.products-item {
+  flex-basis: calc((100% - 8px) / 2);
+
+  @media screen and (min-width: 1024px) {
+    flex-basis: calc((100% - 52px) / 3);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .products-item:nth-child(odd) {
+    margin-right: 8px;
+  }
+  .products-item:nth-child(1),
+  .products-item:nth-child(2) {
+    margin-bottom: 8px;
+  }
+  .products-item:nth-child(3),
+  .products-item:nth-child(4) {
+    margin-bottom: 20px;
+  }
+}
+
+.products-img-wrap {
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width: 1024px) {
+    border-radius: 50%;
+    transition: box-shadow 200ms ease-in-out;
+  }
+}
+
+.products-img-wrap:hover .products-img-list {
+  transform: translateY(0);
+}
+
+.products-img-list {
+  list-style-type: circle;
+  background-color: var(--cloud);
+  border-radius: 45px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 200ms ease-in-out;
+
+  @media screen and (min-width: 1024px) {
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products-img-wrap:hover {
+    box-shadow: 4px 4px 4px 2px rgba(24, 24, 24, 0.4);
+  }
+}
+
+.products-img-item {
+  position: relative;
+  font-weight: 400;
+  width: 147.5px;
+}
+
+.products-img-hint {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--dark-grey-modal);
+
+  @media screen and (min-width: 1024px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+.products-img-hint:nth-child(2n + 1) {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .products-img-hint:nth-child(2n) {
+    display: none;
+  }
+  .products-img-hint:nth-child(2n + 1) {
+    display: block;
+  }
+}

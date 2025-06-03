@@ -1,0 +1,72 @@
+/* ------------MODAL------------ */
+/* ------------LANG SELECTOR------------ */
+.language-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+div.language-box > select.language-select#menu-language-select,
+div.language-box > select.language-select#pp-language-select,
+div.language-box > select.language-select#language-select {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  border-radius: 12px;
+  padding: 4px;
+  border: none;
+  appearance: none;
+
+  transition: transform 200ms ease-in-out, color 200ms ease-in-out;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+div.language-box > select.language-select#pp-language-select,
+div.language-box > select.language-select#language-select {
+  color: inherit;
+  background-color: transparent;
+}
+
+.language-select:hover,
+.language-select:focus {
+  transform: translateY(-4px);
+  color: var(--green) !important;
+}
+
+div.language-box > select.language-select#menu-language-select {
+  color: var(--white);
+  background-color: transparent;
+}
+
+div.language-box::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-250%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out,
+    visibility 200ms ease-in-out;
+}
+
+div.language-box:hover::after,
+div.language-box:focus::after {
+  transform: translateX(-50%);
+  opacity: 1;
+  visibility: visible;
+}
