@@ -25,17 +25,125 @@ const translations = {
     ppAgree: 'By using this website, you agree to this policy.',
   },
 
-  uk: {},
+  uk: {
+    ppNavLink: '',
 
-  tr: {},
+    ppTitle: '',
 
-  ar: {},
+    ppText1: '',
+    ppText2: '',
+    ppText3: '',
+    ppText4: '',
+    ppText5: '',
 
-  zh: {},
+    ppContacts: '',
+    ppEmailText: '',
+    ppEmail: '',
+    ppSiteText: '',
+    ppSite: '',
 
-  es: {},
+    ppAgree: '',
+  },
 
-  fr: {},
+  tr: {
+    ppNavLink: '',
+
+    ppTitle: '',
+
+    ppText1: '',
+    ppText2: '',
+    ppText3: '',
+    ppText4: '',
+    ppText5: '',
+
+    ppContacts: '',
+    ppEmailText: '',
+    ppEmail: '',
+    ppSiteText: '',
+    ppSite: '',
+
+    ppAgree: '',
+  },
+
+  ar: {
+    ppNavLink: '',
+
+    ppTitle: '',
+
+    ppText1: '',
+    ppText2: '',
+    ppText3: '',
+    ppText4: '',
+    ppText5: '',
+
+    ppContacts: '',
+    ppEmailText: '',
+    ppEmail: '',
+    ppSiteText: '',
+    ppSite: '',
+
+    ppAgree: '',
+  },
+
+  zh: {
+    ppNavLink: '',
+
+    ppTitle: '',
+
+    ppText1: '',
+    ppText2: '',
+    ppText3: '',
+    ppText4: '',
+    ppText5: '',
+
+    ppContacts: '',
+    ppEmailText: '',
+    ppEmail: '',
+    ppSiteText: '',
+    ppSite: '',
+
+    ppAgree: '',
+  },
+
+  es: {
+    ppNavLink: '',
+
+    ppTitle: '',
+
+    ppText1: '',
+    ppText2: '',
+    ppText3: '',
+    ppText4: '',
+    ppText5: '',
+
+    ppContacts: '',
+    ppEmailText: '',
+    ppEmail: '',
+    ppSiteText: '',
+    ppSite: '',
+
+    ppAgree: '',
+  },
+
+  fr: {
+    ppNavLink: '',
+
+    ppTitle: '',
+
+    ppText1: '',
+    ppText2: '',
+    ppText3: '',
+    ppText4: '',
+    ppText5: '',
+
+    ppContacts: '',
+    ppEmailText: '',
+    ppEmail: '',
+    ppSiteText: '',
+    ppSite: '',
+
+    ppAgree: '',
+  },
 };
 
 function ppSwitchLanguage(ppLanguageCode) {

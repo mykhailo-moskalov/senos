@@ -11,6 +11,7 @@ const translations = {
     menuNavHome: 'Home',
     menuNavAbout: 'About Us',
     menuNavProducts: 'Products',
+
     menuNavBtn: 'Contact Us',
 
     //HERO
@@ -102,7 +103,7 @@ const translations = {
     footerNavAbout: 'About Us',
     footerNavProducts: 'Products',
 
-    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerCopyright: 'Copyright&copy; SENOS LLC. All rights reserved.',
     footerSocial: 'Social Media',
 
     footerContacts: 'Our contacts',
@@ -129,17 +130,738 @@ const translations = {
     modalBtn: 'Send',
   },
 
-  uk: {},
+  uk: {
+    //HEADER
+    headerNavHome: 'Вгору',
+    headerNavAbout: 'Про Нас',
+    headerNavProducts: 'Наша Продукція',
 
-  tr: {},
+    headerNavBtn: "Зв'яжіться з Нами",
 
-  ar: {},
+    //MENU
+    menuNavHome: 'Вгору',
+    menuNavAbout: 'Про Нас',
+    menuNavProducts: 'Наша Продукція',
 
-  zh: {},
+    menuNavBtn: "Зв'яжіться з Нами",
 
-  es: {},
+    //HERO
+    heroTitle: 'Від Полів України<br />до Світових Ринків',
 
-  fr: {},
+    heroSubtitle: 'Якість, якій довіряють. Партнерство, що працює.',
+
+    heroBtn: 'Переглянути Продукцію',
+
+    //ABOUT
+    aboutTitle: 'Про Нас',
+
+    aboutSubtitle1: 'Хто Ми',
+    aboutText1:
+      "SENOS — це міжнародна торгова компанія, що спеціалізується на експорті аграрної продукції з Чорноморського регіону. Ми об'єднуємо надійних виробників із покупцями по всьому світу — на основі стабільності, прозорості та професійного підходу.",
+    aboutSubtitle2: 'Що Ми Пропонуємо',
+    aboutText2:
+      'Ми постачаємо зернові, бобові, олійні культури, рослинні олії та корми. Усі продукти — лише з перевірених джерел, із повним контролем якості та ефективною логістикою на кожному етапі.',
+    aboutSubtitle3: 'Наша Місія',
+    aboutText3:
+      'Побудова довгострокових партнерств на основі довіри, результативності та цінності. Ми допомагаємо нашим клієнтам зростати через ефективну, безпечну та передбачувану міжнародну торгівлю.',
+
+    //PRODUCTS
+    productsTitle: 'Наша Продукція',
+
+    productsHintMob: 'Нанатисніть, щоб побачити більше',
+    productsHintDesk: 'Наведіться, щоб побачити більше',
+
+    productsText11: 'Пшениця',
+    productsText12: 'Ячмінь',
+    productsText13: 'Кукурудза',
+    productsText14: 'Овес',
+    productsSubtitle1: 'Зернові',
+    productsText21: 'Горох (цілий/колотий)',
+    productsText22: 'Сочевиця (червона/зелена)',
+    productsText23: 'Нут',
+    productsText24: 'Квасоля',
+    productsSubtitle2: 'Бобові Культури',
+    productsText31: 'Соняшникова (нерафінована/рафінована)',
+    productsText32: 'Соєва',
+    productsText33: 'Ріпакова',
+    productsSubtitle3: 'Рослинні Олії',
+    productsText41: 'Насіння соняшнику',
+    productsText42: 'Соя',
+    productsText43: 'Ріпак (канола)',
+    productsText44: 'Гірчиця',
+    productsText45: 'Льон',
+    productsSubtitle4: 'Олійні Культури',
+    productsText51: 'Соняшниковий шрот',
+    productsText52: 'Соєвий шрот',
+    productsText53: 'Лушпиння сої в гранулах',
+    productsText54: 'Пшеничні висівки',
+    productsText55: 'DDGS',
+    productsSubtitle5: 'Кормові',
+    productsText61: 'Білий кристалічний цукор',
+    productsSubtitle6: 'Інші Товари',
+
+    //WHY
+    whyTitle: 'Чому Саме SENOS',
+
+    whySubtitle1: 'Міжнародна Експертиза',
+    whyText1: 'Більше 10 років досвіду в агроекспорті та міжнародній логістиці',
+    whySubtitle2: 'Надійна Мережа Постачальників',
+    whyText2: 'Перевірене походження, аудит якості на всіх етапах',
+    whySubtitle3: 'Асортимент для Глобального Ринку',
+    whyText3: 'Від зернових і олійних — до спеціалізованих кормових рішень',
+    whySubtitle4: 'Операційна Точність',
+    whyText4: 'Чіткі строки, відповідальне виконання, мінімум ризиків',
+    whySubtitle5: 'Партнерський Підхід',
+    whyText5: 'Гнучкі умови співпраці та персоналізовані пропозиції',
+    whySubtitle6: 'Постійне Забезпечення Якості',
+    whyText6:
+      'Стандартизовані процедури контролю якості від походження до кінцевої поставки',
+    whySubtitle7: 'Прозорість та Надійність',
+    whyText7:
+      'Чітка комунікація, повна відстежуваність та суворе дотримання домовленостей',
+    whySubtitle8: 'Довгострокові Відносини',
+    whyText8:
+      'Ми не шукаємо угод на один раз — ми будуємо стабільні партнерства',
+
+    whyBtn: "Зв'яжіться з Нами",
+
+    //FOOTER
+    footerNavHome: 'Вгору',
+    footerNavAbout: 'Про Нас',
+    footerNavProducts: 'Наша Продукція',
+
+    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerSocial: 'Соціальні Мережі',
+
+    footerContacts: 'Наші Контакти',
+    footerPhone: '+380-63-190-14-10',
+    footerEmail: 'trade@senosgroup.com',
+
+    //MODAL
+    modalTitle:
+      "Надішліть нам коротке повідомлення — і ми оперативно вийдемо на зв'язок",
+
+    modalLabelName: "Ім'я та прізвище",
+    modalTextValid1: 'Успішно!',
+    modalTextInvalid1: "Недійсне ім'я, спробуйте ще раз",
+    modalLabelPhone: 'Телефон',
+    modalTextValid2: 'Успішно!',
+    modalTextInvalid2: 'Недійсний номер телефону, спробуйте ще раз',
+    modalLabelEmail: 'Електронна пошта',
+    modalTextValid3: 'Успішно!',
+    modalTextInvalid3: 'Недійсна електронна адреса, спробуйте ще раз',
+    modalLabelComment: 'Повідомлення',
+
+    modalAgreeText: 'Я приймаю умови та погоджуюся з',
+    modalAgreeLink: 'Політикою конфіденційності',
+
+    modalBtn: 'Надіслати запит',
+  },
+
+  tr: {
+    //HEADER
+    headerNavHome: '',
+    headerNavAbout: '',
+    headerNavProducts: '',
+
+    headerNavBtn: '',
+
+    //MENU
+    menuNavHome: '',
+    menuNavAbout: '',
+    menuNavProducts: '',
+
+    menuNavBtn: '',
+
+    //HERO
+    heroTitle: '',
+
+    heroSubtitle: '',
+
+    heroBtn: '',
+
+    //ABOUT
+    aboutTitle: '',
+
+    aboutSubtitle1: '',
+    aboutText1: '',
+    aboutSubtitle2: '',
+    aboutText2: '',
+    aboutSubtitle3: '',
+    aboutText3: '',
+
+    //PRODUCTS
+    productsTitle: '',
+
+    productsHintMob: '',
+    productsHintDesk: '',
+
+    productsText11: '',
+    productsText12: '',
+    productsText13: '',
+    productsText14: '',
+    productsSubtitle1: '',
+    productsText21: '',
+    productsText22: '',
+    productsText23: '',
+    productsText24: '',
+    productsSubtitle2: '',
+    productsText31: '',
+    productsText32: '',
+    productsText33: '',
+    productsSubtitle3: '',
+    productsText41: '',
+    productsText42: '',
+    productsText43: '',
+    productsText44: '',
+    productsText45: '',
+    productsSubtitle4: '',
+    productsText51: '',
+    productsText52: '',
+    productsText53: '',
+    productsText54: '',
+    productsText55: '',
+    productsSubtitle5: '',
+    productsText61: '',
+    productsSubtitle6: '',
+
+    //WHY
+    whyTitle: '',
+
+    whySubtitle1: '',
+    whyText1: '',
+    whySubtitle2: '',
+    whyText2: '',
+    whySubtitle3: '',
+    whyText3: '',
+    whySubtitle4: '',
+    whyText4: '',
+    whySubtitle5: '',
+    whyText5: '',
+    whySubtitle6: '',
+    whyText6: '',
+    whySubtitle7: '',
+    whyText7: '',
+    whySubtitle8: '',
+    whyText8: '',
+
+    whyBtn: '',
+
+    //FOOTER
+    footerNavHome: '',
+    footerNavAbout: '',
+    footerNavProducts: '',
+
+    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerSocial: '',
+
+    footerContacts: '',
+    footerPhone: '',
+    footerEmail: '',
+
+    //MODAL
+    modalTitle: '',
+
+    modalLabelName: '',
+    modalTextValid1: '',
+    modalTextInvalid1: '',
+    modalLabelPhone: '',
+    modalTextValid2: '',
+    modalTextInvalid2: '',
+    modalLabelEmail: '',
+    modalTextValid3: '',
+    modalTextInvalid3: '',
+    modalLabelComment: '',
+
+    modalAgreeText: '',
+    modalAgreeLink: '',
+
+    modalBtn: '',
+  },
+
+  ar: {
+    //HEADER
+    headerNavHome: '',
+    headerNavAbout: '',
+    headerNavProducts: '',
+
+    headerNavBtn: '',
+
+    //MENU
+    menuNavHome: '',
+    menuNavAbout: '',
+    menuNavProducts: '',
+
+    menuNavBtn: '',
+
+    //HERO
+    heroTitle: '',
+
+    heroSubtitle: '',
+
+    heroBtn: '',
+
+    //ABOUT
+    aboutTitle: '',
+
+    aboutSubtitle1: '',
+    aboutText1: '',
+    aboutSubtitle2: '',
+    aboutText2: '',
+    aboutSubtitle3: '',
+    aboutText3: '',
+
+    //PRODUCTS
+    productsTitle: '',
+
+    productsHintMob: '',
+    productsHintDesk: '',
+
+    productsText11: '',
+    productsText12: '',
+    productsText13: '',
+    productsText14: '',
+    productsSubtitle1: '',
+    productsText21: '',
+    productsText22: '',
+    productsText23: '',
+    productsText24: '',
+    productsSubtitle2: '',
+    productsText31: '',
+    productsText32: '',
+    productsText33: '',
+    productsSubtitle3: '',
+    productsText41: '',
+    productsText42: '',
+    productsText43: '',
+    productsText44: '',
+    productsText45: '',
+    productsSubtitle4: '',
+    productsText51: '',
+    productsText52: '',
+    productsText53: '',
+    productsText54: '',
+    productsText55: '',
+    productsSubtitle5: '',
+    productsText61: '',
+    productsSubtitle6: '',
+
+    //WHY
+    whyTitle: '',
+
+    whySubtitle1: '',
+    whyText1: '',
+    whySubtitle2: '',
+    whyText2: '',
+    whySubtitle3: '',
+    whyText3: '',
+    whySubtitle4: '',
+    whyText4: '',
+    whySubtitle5: '',
+    whyText5: '',
+    whySubtitle6: '',
+    whyText6: '',
+    whySubtitle7: '',
+    whyText7: '',
+    whySubtitle8: '',
+    whyText8: '',
+
+    whyBtn: '',
+
+    //FOOTER
+    footerNavHome: '',
+    footerNavAbout: '',
+    footerNavProducts: '',
+
+    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerSocial: '',
+
+    footerContacts: '',
+    footerPhone: '',
+    footerEmail: '',
+
+    //MODAL
+    modalTitle: '',
+
+    modalLabelName: '',
+    modalTextValid1: '',
+    modalTextInvalid1: '',
+    modalLabelPhone: '',
+    modalTextValid2: '',
+    modalTextInvalid2: '',
+    modalLabelEmail: '',
+    modalTextValid3: '',
+    modalTextInvalid3: '',
+    modalLabelComment: '',
+
+    modalAgreeText: '',
+    modalAgreeLink: '',
+
+    modalBtn: '',
+  },
+
+  zh: {
+    //HEADER
+    headerNavHome: '',
+    headerNavAbout: '',
+    headerNavProducts: '',
+
+    headerNavBtn: '',
+
+    //MENU
+    menuNavHome: '',
+    menuNavAbout: '',
+    menuNavProducts: '',
+
+    menuNavBtn: '',
+
+    //HERO
+    heroTitle: '',
+
+    heroSubtitle: '',
+
+    heroBtn: '',
+
+    //ABOUT
+    aboutTitle: '',
+
+    aboutSubtitle1: '',
+    aboutText1: '',
+    aboutSubtitle2: '',
+    aboutText2: '',
+    aboutSubtitle3: '',
+    aboutText3: '',
+
+    //PRODUCTS
+    productsTitle: '',
+
+    productsHintMob: '',
+    productsHintDesk: '',
+
+    productsText11: '',
+    productsText12: '',
+    productsText13: '',
+    productsText14: '',
+    productsSubtitle1: '',
+    productsText21: '',
+    productsText22: '',
+    productsText23: '',
+    productsText24: '',
+    productsSubtitle2: '',
+    productsText31: '',
+    productsText32: '',
+    productsText33: '',
+    productsSubtitle3: '',
+    productsText41: '',
+    productsText42: '',
+    productsText43: '',
+    productsText44: '',
+    productsText45: '',
+    productsSubtitle4: '',
+    productsText51: '',
+    productsText52: '',
+    productsText53: '',
+    productsText54: '',
+    productsText55: '',
+    productsSubtitle5: '',
+    productsText61: '',
+    productsSubtitle6: '',
+
+    //WHY
+    whyTitle: '',
+
+    whySubtitle1: '',
+    whyText1: '',
+    whySubtitle2: '',
+    whyText2: '',
+    whySubtitle3: '',
+    whyText3: '',
+    whySubtitle4: '',
+    whyText4: '',
+    whySubtitle5: '',
+    whyText5: '',
+    whySubtitle6: '',
+    whyText6: '',
+    whySubtitle7: '',
+    whyText7: '',
+    whySubtitle8: '',
+    whyText8: '',
+
+    whyBtn: '',
+
+    //FOOTER
+    footerNavHome: '',
+    footerNavAbout: '',
+    footerNavProducts: '',
+
+    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerSocial: '',
+
+    footerContacts: '',
+    footerPhone: '',
+    footerEmail: '',
+
+    //MODAL
+    modalTitle: '',
+
+    modalLabelName: '',
+    modalTextValid1: '',
+    modalTextInvalid1: '',
+    modalLabelPhone: '',
+    modalTextValid2: '',
+    modalTextInvalid2: '',
+    modalLabelEmail: '',
+    modalTextValid3: '',
+    modalTextInvalid3: '',
+    modalLabelComment: '',
+
+    modalAgreeText: '',
+    modalAgreeLink: '',
+
+    modalBtn: '',
+  },
+
+  es: {
+    //HEADER
+    headerNavHome: '',
+    headerNavAbout: '',
+    headerNavProducts: '',
+
+    headerNavBtn: '',
+
+    //MENU
+    menuNavHome: '',
+    menuNavAbout: '',
+    menuNavProducts: '',
+
+    menuNavBtn: '',
+
+    //HERO
+    heroTitle: '',
+
+    heroSubtitle: '',
+
+    heroBtn: '',
+
+    //ABOUT
+    aboutTitle: '',
+
+    aboutSubtitle1: '',
+    aboutText1: '',
+    aboutSubtitle2: '',
+    aboutText2: '',
+    aboutSubtitle3: '',
+    aboutText3: '',
+
+    //PRODUCTS
+    productsTitle: '',
+
+    productsHintMob: '',
+    productsHintDesk: '',
+
+    productsText11: '',
+    productsText12: '',
+    productsText13: '',
+    productsText14: '',
+    productsSubtitle1: '',
+    productsText21: '',
+    productsText22: '',
+    productsText23: '',
+    productsText24: '',
+    productsSubtitle2: '',
+    productsText31: '',
+    productsText32: '',
+    productsText33: '',
+    productsSubtitle3: '',
+    productsText41: '',
+    productsText42: '',
+    productsText43: '',
+    productsText44: '',
+    productsText45: '',
+    productsSubtitle4: '',
+    productsText51: '',
+    productsText52: '',
+    productsText53: '',
+    productsText54: '',
+    productsText55: '',
+    productsSubtitle5: '',
+    productsText61: '',
+    productsSubtitle6: '',
+
+    //WHY
+    whyTitle: '',
+
+    whySubtitle1: '',
+    whyText1: '',
+    whySubtitle2: '',
+    whyText2: '',
+    whySubtitle3: '',
+    whyText3: '',
+    whySubtitle4: '',
+    whyText4: '',
+    whySubtitle5: '',
+    whyText5: '',
+    whySubtitle6: '',
+    whyText6: '',
+    whySubtitle7: '',
+    whyText7: '',
+    whySubtitle8: '',
+    whyText8: '',
+
+    whyBtn: '',
+
+    //FOOTER
+    footerNavHome: '',
+    footerNavAbout: '',
+    footerNavProducts: '',
+
+    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerSocial: '',
+
+    footerContacts: '',
+    footerPhone: '',
+    footerEmail: '',
+
+    //MODAL
+    modalTitle: '',
+
+    modalLabelName: '',
+    modalTextValid1: '',
+    modalTextInvalid1: '',
+    modalLabelPhone: '',
+    modalTextValid2: '',
+    modalTextInvalid2: '',
+    modalLabelEmail: '',
+    modalTextValid3: '',
+    modalTextInvalid3: '',
+    modalLabelComment: '',
+
+    modalAgreeText: '',
+    modalAgreeLink: '',
+
+    modalBtn: '',
+  },
+
+  fr: {
+    //HEADER
+    headerNavHome: '',
+    headerNavAbout: '',
+    headerNavProducts: '',
+
+    headerNavBtn: '',
+
+    //MENU
+    menuNavHome: '',
+    menuNavAbout: '',
+    menuNavProducts: '',
+
+    menuNavBtn: '',
+
+    //HERO
+    heroTitle: '',
+
+    heroSubtitle: '',
+
+    heroBtn: '',
+
+    //ABOUT
+    aboutTitle: '',
+
+    aboutSubtitle1: '',
+    aboutText1: '',
+    aboutSubtitle2: '',
+    aboutText2: '',
+    aboutSubtitle3: '',
+    aboutText3: '',
+
+    //PRODUCTS
+    productsTitle: '',
+
+    productsHintMob: '',
+    productsHintDesk: '',
+
+    productsText11: '',
+    productsText12: '',
+    productsText13: '',
+    productsText14: '',
+    productsSubtitle1: '',
+    productsText21: '',
+    productsText22: '',
+    productsText23: '',
+    productsText24: '',
+    productsSubtitle2: '',
+    productsText31: '',
+    productsText32: '',
+    productsText33: '',
+    productsSubtitle3: '',
+    productsText41: '',
+    productsText42: '',
+    productsText43: '',
+    productsText44: '',
+    productsText45: '',
+    productsSubtitle4: '',
+    productsText51: '',
+    productsText52: '',
+    productsText53: '',
+    productsText54: '',
+    productsText55: '',
+    productsSubtitle5: '',
+    productsText61: '',
+    productsSubtitle6: '',
+
+    //WHY
+    whyTitle: '',
+
+    whySubtitle1: '',
+    whyText1: '',
+    whySubtitle2: '',
+    whyText2: '',
+    whySubtitle3: '',
+    whyText3: '',
+    whySubtitle4: '',
+    whyText4: '',
+    whySubtitle5: '',
+    whyText5: '',
+    whySubtitle6: '',
+    whyText6: '',
+    whySubtitle7: '',
+    whyText7: '',
+    whySubtitle8: '',
+    whyText8: '',
+
+    whyBtn: '',
+
+    //FOOTER
+    footerNavHome: '',
+    footerNavAbout: '',
+    footerNavProducts: '',
+
+    footerCopyright: 'Copyright&copy; SENOS LLC. All rights reserved.',
+    footerSocial: '',
+
+    footerContacts: '',
+    footerPhone: '',
+    footerEmail: '',
+
+    //MODAL
+    modalTitle: '',
+
+    modalLabelName: '',
+    modalTextValid1: '',
+    modalTextInvalid1: '',
+    modalLabelPhone: '',
+    modalTextValid2: '',
+    modalTextInvalid2: '',
+    modalLabelEmail: '',
+    modalTextValid3: '',
+    modalTextInvalid3: '',
+    modalLabelComment: '',
+
+    modalAgreeText: '',
+    modalAgreeLink: '',
+
+    modalBtn: '',
+  },
 };
 
 function switchLanguage(languageCode) {
