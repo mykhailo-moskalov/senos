@@ -1,3 +1,18 @@
+:root {
+  --green: #007734;
+  --dark-green: #004708;
+  --dark-grey: #181818;
+  --grey: #2b2b2b;
+  --light-grey: #959595;
+  --cloud: #fcfcfc;
+  --dark-grey-modal: rgba(24, 24, 24, 0.4);
+  --clear-grey: rgba(43, 43, 43, 0.15);
+  --dairy: #fcfcfc;
+  --white: #fff;
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Raleway', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,21 +31,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
   }
-}
-
-:root {
-  --green: #007734;
-  --dark-green: #004708;
-  --dark-grey: #181818;
-  --grey: #2b2b2b;
-  --light-grey: #959595;
-  --cloud: #fcfcfc;
-  --dark-grey-modal: rgba(24, 24, 24, 0.4);
-  --clear-grey: rgba(43, 43, 43, 0.15);
-  --dairy: #fcfcfc;
-  --white: #fff;
-  --font-family: 'Montserrat', sans-serif;
-  --second-family: 'Raleway', sans-serif;
 }
 
 h1 {
