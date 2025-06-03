@@ -168,7 +168,7 @@ const translations = {
     //PRODUCTS
     productsTitle: 'Наша Продукція',
 
-    productsHintMob: 'Нанатисніть, щоб побачити більше',
+    productsHintMob: 'Натисніть, щоб побачити більше',
     productsHintDesk: 'Наведіться, щоб побачити більше',
 
     productsText11: 'Пшениця',
