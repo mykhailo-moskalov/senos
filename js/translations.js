@@ -63,7 +63,7 @@ const translations = {
     productsText51: 'Sunflower Meal',
     productsText52: 'Soybean Meal',
     productsText53: 'Wheat Bran',
-    productsText54: 'DDGS (Dried Distillers Grains with Soluble)',
+    productsText54: 'DDGS',
     productsText55: 'Pelleted Soybean Hulls',
     productsSubtitle5: 'Animal Feed &amp; Meals',
     productsText61: 'White Crystal Sugar',
