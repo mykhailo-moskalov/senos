@@ -260,123 +260,132 @@ const translations = {
 
   tr: {
     //HEADER
-    headerNavHome: '',
-    headerNavAbout: '',
-    headerNavProducts: '',
+    headerNavHome: 'Ana Sayfa',
+    headerNavAbout: 'Hakkımızda',
+    headerNavProducts: 'Ürünler',
 
-    headerNavBtn: '',
+    headerNavBtn: 'Bize Ulaşın',
 
     //MENU
-    menuNavHome: '',
-    menuNavAbout: '',
-    menuNavProducts: '',
+    menuNavHome: 'Ana Sayfa',
+    menuNavAbout: 'Hakkımızda',
+    menuNavProducts: 'Ürünler',
 
-    menuNavBtn: '',
+    menuNavBtn: 'Bize Ulaşın',
 
     //HERO
-    heroTitle: '',
+    heroTitle: 'Tarlalardan<br />Küresel Pazarlara',
 
-    heroSubtitle: '',
+    heroSubtitle: 'Dünya çapında güvenilir. Kaliteyle hareket ediyoruz',
 
-    heroBtn: '',
+    heroBtn: 'Ürünlerimizi Keşfedin',
 
     //ABOUT
-    aboutTitle: '',
+    aboutTitle: 'Hakkımızda',
 
-    aboutSubtitle1: '',
-    aboutText1: '',
-    aboutSubtitle2: '',
-    aboutText2: '',
-    aboutSubtitle3: '',
-    aboutText3: '',
+    aboutSubtitle1: 'Biz Kimiz',
+    aboutText1:
+      'SENOS, Karadeniz bölgesinden tarım ürünleri ihraç eden ve güvenilir üreticileri dünya genelindeki alıcılarla buluşturan uluslararası bir ticaret şirketidir.',
+    aboutSubtitle2: 'Neler Sunuyoruz',
+    aboutText2:
+      'Güvenilir tedarikçiler, kalite kontrolü ve sorunsuz lojistik desteğiyle tahıl, bakliyat, yağlı tohum, bitkisel yağ ve hayvan yemi tedarik ediyoruz.',
+    aboutSubtitle3: 'Misyonumuz',
+    aboutText3:
+      'Güven, performans ve değer aracılığıyla uzun vadeli ortaklıklar kurmak — müşterilerimizin güvenilir ve verimli ticaretle büyümesine yardımcı olmak.',
 
     //PRODUCTS
-    productsTitle: '',
+    productsTitle: 'Ürünlerimiz ',
 
-    productsHintMob: '',
-    productsHintDesk: '',
+    productsHintMob: ' Daha fazla görmek için dokunun',
+    productsHintDesk: 'Üzerine gelerek daha fazlasını görün',
 
-    productsText11: '',
-    productsText12: '',
-    productsText13: '',
-    productsText14: '',
-    productsSubtitle1: '',
-    productsText21: '',
-    productsText22: '',
-    productsText23: '',
-    productsText24: '',
-    productsSubtitle2: '',
-    productsText31: '',
-    productsText32: '',
-    productsText33: '',
-    productsSubtitle3: '',
-    productsText41: '',
-    productsText42: '',
-    productsText43: '',
-    productsText44: '',
-    productsText45: '',
-    productsSubtitle4: '',
-    productsText51: '',
-    productsText52: '',
-    productsText53: '',
-    productsText54: '',
-    productsText55: '',
-    productsSubtitle5: '',
-    productsText61: '',
-    productsSubtitle6: '',
+    productsText11: 'Buğday',
+    productsText12: 'Arpa',
+    productsText13: 'Mısır',
+    productsText14: 'Yulaf',
+    productsSubtitle1: 'Tahıllar',
+    productsText21: 'Bütün/Bölünmüş Bezelye',
+    productsText22: 'Kırmızı/Yeşil Mercimek',
+    productsText23: 'Nohut',
+    productsText24: 'Fasulye',
+    productsSubtitle2: 'Baklagiller',
+    productsText31: 'Ham ve Rafine Ayçiçek Yağı',
+    productsText32: 'Soya Yağı',
+    productsText33: 'Kanola Yağı',
+    productsSubtitle3: 'Yenilebilir Yağlar',
+    productsText41: 'Ayçiçeği Tohumu',
+    productsText42: 'Soya Fasulyesi',
+    productsText43: 'Kanola Tohumu',
+    productsText44: 'Hardal Tohumu',
+    productsText45: 'Keten Tohumu',
+    productsSubtitle4: 'Yağlı Tohumlar',
+    productsText51: 'Ayçiçeği Küspesi',
+    productsText52: 'Soya Küspesi',
+    productsText53: 'Buğday Kepeği',
+    productsText54: 'DDGS',
+    productsText55: 'Peletlenmiş Soya Kabuğu',
+    productsSubtitle5: 'Hayvan Yemleri ve Küspeleri',
+    productsText61: 'Beyaz Kristal Şeker',
+    productsSubtitle6: 'Diğer Ürünler',
 
     //WHY
-    whyTitle: '',
+    whyTitle: "Neden Senos'u Seçmelisiniz",
 
-    whySubtitle1: '',
-    whyText1: '',
-    whySubtitle2: '',
-    whyText2: '',
-    whySubtitle3: '',
-    whyText3: '',
-    whySubtitle4: '',
-    whyText4: '',
-    whySubtitle5: '',
-    whyText5: '',
-    whySubtitle6: '',
-    whyText6: '',
-    whySubtitle7: '',
-    whyText7: '',
-    whySubtitle8: '',
-    whyText8: '',
+    whySubtitle1: 'Uluslararası Uzmanlık',
+    whyText1: 'Uluslararası tarım emtia ticaretinde 10 yılı aşkın deneyim',
+    whySubtitle2: 'Güvenilir Tedarikçi Ağı',
+    whyText2:
+      'Onaylı tedarikçilerle güvenilir iş ortaklıkları ve her aşamada sıkı kalite kontrol',
+    whySubtitle3: 'Ürün Çeşitliliği',
+    whyText3:
+      'Tahıl, yağlı tohum, yemeklik yağ, hayvan yemi ve işlenmiş tarım ürünlerini içeren geniş portföy',
+    whySubtitle4: 'Operasyonel Verimlilik',
+    whyText4:
+      'Hızlı uygulama, düzenli lojistik ve profesyonel teslimat yönetimi',
+    whySubtitle5: 'Müşteri Odaklı Yaklaşım',
+    whyText5:
+      'Her müşterinin özel ihtiyaçlarına yönelik esnek koşullar ve özel çözümler',
+    whySubtitle6: 'Tutarlı Kalite Güvencesi',
+    whyText6: 'Başlangıçtan teslimata kadar standart kalite prosedürleri',
+    whySubtitle7: 'Şeffaflık ve Güvenilirlik',
+    whyText7: 'Açık iletişim, tam izlenebilirlik ve anlaşmalara sıkı bağlılık',
+    whySubtitle8: 'Uzun Vadeli Ortaklıklar',
+    whyText8:
+      'Tek seferlik işlemler değil, uzun vadeli iş ilişkileri kurmaya odaklanırız',
 
-    whyBtn: '',
+    whyBtn: 'Bize Ulaşın',
 
     //FOOTER
-    footerNavHome: '',
-    footerNavAbout: '',
-    footerNavProducts: '',
+    footerNavHome: 'Ana Sayfa',
+    footerNavAbout: 'Hakkımızda',
+    footerNavProducts: 'Ürünler',
 
-    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
-    footerSocial: '',
+    footerCopyright: 'Copyright&copy; SENOS LLC. All rights reserved.',
+    footerSocial: 'Sosyal Medya',
 
-    footerContacts: '',
-    footerPhone: '',
-    footerEmail: '',
+    footerContacts: 'İletişim Bilgilerimiz',
+    footerPhone: '+380-63-190-14-10',
+    footerEmail: 'trade@senosgroup.com',
 
     //MODAL
-    modalTitle: '',
+    modalTitle:
+      'Bilgilerinizi bırakın, ekibimiz en kısa sürede sizinle iletişime geçsin',
 
-    modalLabelName: '',
-    modalTextValid1: '',
-    modalTextInvalid1: '',
-    modalLabelPhone: '',
-    modalTextValid2: '',
-    modalTextInvalid2: '',
-    modalLabelEmail: '',
-    modalTextValid3: '',
-    modalTextInvalid3: '',
-    modalLabelComment: '',
+    modalLabelName: 'Ad',
+    modalTextValid1: 'Başarılı!',
+    modalTextInvalid1: 'Geçersiz ad, lütfen tekrar deneyin',
+    modalLabelPhone: 'Telefon',
+    modalTextValid2: 'Başarılı!',
+    modalTextInvalid2: 'Geçersiz telefon, lütfen tekrar deneyin',
+    modalLabelEmail: 'E-posta',
+    modalTextValid3: 'Başarılı!',
+    modalTextInvalid3: 'Geçersiz e-posta, lütfen tekrar deneyin',
+    modalLabelComment: 'Yorum',
 
-    modalAgreeText: '',
-    modalAgreeLink: '',
+    modalAgreeText: 'Şartlar ve koşulları kabul ediyorum',
+    modalAgreeLink: 'Gizlilik Politikası',
 
-    modalBtn: '',
+    modalBtn: 'Gönder',
   },
 
   ar: {
@@ -473,12 +482,12 @@ const translations = {
     footerNavAbout: '',
     footerNavProducts: '',
 
-    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerCopyright: 'Copyright&copy; SENOS LLC. All rights reserved.',
     footerSocial: '',
 
     footerContacts: '',
-    footerPhone: '',
-    footerEmail: '',
+    footerPhone: '+380-63-190-14-10',
+    footerEmail: 'trade@senosgroup.com',
 
     //MODAL
     modalTitle: '',
@@ -594,12 +603,12 @@ const translations = {
     footerNavAbout: '',
     footerNavProducts: '',
 
-    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerCopyright: 'Copyright&copy; SENOS LLC. All rights reserved.',
     footerSocial: '',
 
     footerContacts: '',
-    footerPhone: '',
-    footerEmail: '',
+    footerPhone: '+380-63-190-14-10',
+    footerEmail: 'trade@senosgroup.com',
 
     //MODAL
     modalTitle: '',
@@ -715,12 +724,12 @@ const translations = {
     footerNavAbout: '',
     footerNavProducts: '',
 
-    footerCopyright: 'Copyright&copy; SENOS LLC . All rights reserved.',
+    footerCopyright: 'Copyright&copy; SENOS LLC. All rights reserved.',
     footerSocial: '',
 
     footerContacts: '',
-    footerPhone: '',
-    footerEmail: '',
+    footerPhone: '+380-63-190-14-10',
+    footerEmail: 'trade@senosgroup.com',
 
     //MODAL
     modalTitle: '',
@@ -840,8 +849,8 @@ const translations = {
     footerSocial: '',
 
     footerContacts: '',
-    footerPhone: '',
-    footerEmail: '',
+    footerPhone: '+380-63-190-14-10',
+    footerEmail: 'trade@senosgroup.com',
 
     //MODAL
     modalTitle: '',
